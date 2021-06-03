@@ -1,0 +1,178 @@
+@charset "utf-8";
+body {
+	background-color: #EDEAE0;
+	margin: 0;
+}
+/**Nav bar**/
+ul.nav_bar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #DDDDDD;
+
+}
+ul.nav_bar li {
+	float: left;
+}
+ul.nav_bar li a {
+	display: block;
+	padding: 8px;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+ul.nav_bar li a:hover:not(active) {
+	color: #EDEAE0;
+	background-color: #0081C6;
+}
+ul.nav_bar li a.active {
+	color: #EDEAE0;
+	background-color: #0081C6;
+}
+ul.nav_bar li.right {float: right}
+
+@media screen and (max-width: 600px)
+{
+	ul.nav_bar li.right,
+	ul.nav_bar li {float:none;}
+}
+/**Contact screen**/
+.form {
+
+	padding: 50px;
+	background-color: #f2f2f2;
+	border-radius: 20px;
+}
+input[type = text], select {
+	width: 60%;
+	padding: 12px 20px;
+	margin: 8px;
+	display: inline-block;
+	border: 1px solid #0081C6;
+}
+input[type = email], select {
+	width: 60%;
+	padding: 12px 20px;
+	margin: 8px;
+	display: inline-block;
+	border: 1px solid #0081C6;
+}
+
+input[type=submit]{
+	width: 30%;
+	padding: 12px 20px;
+	margin-left: 170px;
+	color: #EDEAE0;
+	background-color: #0081C6;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: #70C3F0;
+	color: #0081C6;
+	
+}
+/**Fonts**/
+body{
+	font-family: Arial;
+	font-weight: bold;
+}
+/**Index**/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /**height: 300px;**/ /* Should be removed. Only for demonstration */
+}
+.button {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+.button2 :hover{ 
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**Products**/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #0081C6;
+  
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.gallery a :hover {
+  background-color: #0081C6;
+  
+}
+
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
